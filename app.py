@@ -8,7 +8,7 @@ from flask_apscheduler import APScheduler  # Add this import for scheduling task
 from flask_weasyprint import render_pdf  # Add this import for PDF generation
 from weasyprint import HTML  # Add this import for PDF generation
 
-app = Flask(__name__, static_folder='static', static_url_path='/static')
+app = Flask(__name__)
 
 # Add this route to explicitly serve static files if needed
 @app.route('/static/<path:filename>')
